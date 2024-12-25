@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "tailwindcss": "^3.3.0",
+    "tailwindcss-animate": "^1.0.0",
     "@hookform/resolvers": "^3.9.0",
     "@huggingface/inference": "^2.6.6",
     "@radix-ui/react-accordion": "^1.2.0",
