@@ -1,11 +1,11 @@
+const animate = require('tailwindcss-animate');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -15,8 +15,9 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+        'gradient-shift': 'gradient 15s ease infinite',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
-}
+  plugins: [animate],
+};
